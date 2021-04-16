@@ -1,0 +1,40 @@
+INSTALLATION of the htucker toolbox
+-----------------------------------
+
+1. Unpack the compressed file htucker_toolbox_1.2.zip. This should create
+   a directory htucker_1.2.
+
+2. Open MATLAB and change into the directory htucker_1.2.
+
+3. Execute the following commands within Matlab
+
+     addpath(pwd)
+     cd examples; addpath(pwd)
+     savepath %<-- Save path for future MATLAB sessions.
+              %    This may not work for all installations of Matlab.
+
+Compatibility with Tensor Toolbox
+---------------------------------
+
+Much of the functionality of this toolbox is similar to the Tensor
+Toolbox, so it is possible to use both concurrently. Note that the htucker
+toolbox does not make use of the tensor class in the Tensor Toolbox, but
+uses standard MATLAB multi-dimensional arrays instead.
+
+Compatibility with MATLAB versions
+----------------------------------
+
+This toolbox requires MATLAB Version 7.6 (R2008a) or later. It has
+been tested under Linux, with MATLAB Versions 7.6 (R2008a) and 7.14 (R2012a).
+
+Getting started
+---------------
+
+Run test_functions to check the validity of the installation.
+
+Try some of the demos in the directory examples.
+
+For more information, see the preprint 
+  Kressner, D. and Tobler, C., 2012
+  htucker - A Matlab toolbox for tensors in hierarchical Tucker format
+and other preprints available from http://anchp.epfl.ch
