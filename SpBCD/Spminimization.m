@@ -15,7 +15,9 @@ g=schatten_p(p,d,tau);
 g(g>0)=g(g>0)./d(g>0);
 k = length(g(g>0));
 t = (p*(1-p)/2)^(1/(2-p));
-if k < length(d)
+if k == 0
+    tau = tau;
+elseif k < length(d)
     d1 = (d(k+1)/(t+p*t^(p-1)))^(2-p);
     d2 = (d(k)/(t+p*t^(p-1)))^(2-p);
     tau = 0.5*d1 + 0.5*d2;
