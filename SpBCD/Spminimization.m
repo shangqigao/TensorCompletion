@@ -26,5 +26,4 @@ else
     tau = d2*0.1;
 end
 M=U*diag(g)*U'*X;
-tau
 end
